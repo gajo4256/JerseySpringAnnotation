@@ -14,7 +14,7 @@ import java.util.Set;
 
 /**
  * We need @Order annotation because sometimes custom WebApplicationInitializer and Jersey's SpringWebApplicationInitializer
- * will try to load, but not sure which context will get loaded first
+ * will try to load, but not sure which context will get loaded first, see https://java.net/jira/browse/JERSEY-2038
 */
 @Order(1)
 public class WebAppInitializer implements WebApplicationInitializer {
